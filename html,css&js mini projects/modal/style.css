@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    height: 100vh;
+    background: url('http://www.hdwallpaperspulse.com/wp-content/uploads/2016/08/27/amazing-mountains-view-image.jpg') no-repeat center center/ cover ;
+    position: relative;
+}
+
+#btn{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    font-size: 1.5rem;
+    padding: 5px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 0 1opx black;
+    width: 150px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+#btn:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+#modal{
+    background-color: #fff;
+    color: black;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    align-items: center;
+    animation-name: animatemodel;
+    animation-duration: .4s;
+
+}
+
+#close-btn{
+    font-size: 3rem;
+}
+
+#close-btn:hover{
+   cursor: pointer;
+   color: red;
+}
+
+#container{
+    display: none;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+  @keyframes animatemodel{
+    from{
+        top: -300%;
+        opacity: 0;
+    }
+    to{
+        top: 50%;
+        opacity: 1;
+    }
+  }
